@@ -1,0 +1,23 @@
+<div class=" text-center d-flex justify-content-center align-items-center">
+  <img class="rounded-circle m-2" src="{{AVT_URL}}" alt="" style="max-height: 60px">
+</div>
+<p class="text-center">{{user?.fullName}}</p>
+<ul class="side-menu top">
+  <li class="">
+    <button mat-icon-button color="primary" routerLink="/main/product" matTooltip="Yêu cầu nghỉ phép">
+      <mat-icon>list</mat-icon>
+    </button>
+  </li>
+  <li class="">
+    <button mat-icon-button color="primary" routerLink="/main/user" matTooltip="Buyers">
+      <mat-icon>people</mat-icon>
+    </button>
+  </li>
+</ul>
+<ul class="side-menu footer">
+  <li class="">
+    <button color="warn" mat-icon-button matTooltip="Exit" (click)="signOut()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </li>
+</ul>

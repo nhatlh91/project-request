@@ -1,0 +1,26 @@
+<div class="bg-img">
+  <div class="wrapper">
+    <div class="title">
+      <img class="rounded-circle" src="{{AVT_URL}}" alt="" style="max-height: 80px">
+    </div>
+    <form [formGroup]="rf">
+      <div class="field">
+        <input type="phone" required formControlName="phone">
+        <label>Phone</label>
+      </div>
+      <div class="field">
+        <input type="password" required formControlName="password">
+        <label>Password</label>
+      </div>
+      <div class="field">
+        <input type="submit" value="SIGN IN" [disabled]="rf.invalid || isLoading" (click)="onSubmit()">
+      </div>
+      <div class="signup-link">
+        Product Liquidation System
+      </div>
+    </form>
+  </div>
+  <footer class="  py-3">
+    <p>Made by Brian Le</p>
+  </footer>
+</div>
